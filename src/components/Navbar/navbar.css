@@ -1,0 +1,24 @@
+.Nav :hover  {
+    color: #1d6a6e !important;
+    
+}
+
+.Nav {
+    background-color: white !important;
+}
+
+.active{
+    color: #1d6a6e !important;
+   
+}
+
+  
+
+.uk-navbar-nav>li.uk-active>a {
+    color: #1d6a6e !important;
+}
+
+.uk-offcanvas-bar{
+    background: #1d6a6e !important;
+    color: white !important;
+}
