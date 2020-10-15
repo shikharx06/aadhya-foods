@@ -1,76 +1,46 @@
-import React, { Component } from 'react';
-import logo from '../../assets/images/f.p-fb-size-logo.jpg'
+import React from 'react';
+import Images from '../../theme/images';
 import './navbar.css'
+import {NavLink} from "react-router-dom";
 
 
-
-export default class Nav extends Component {
-    constructor() {
-        super();
-        this.state = {
-            navItems: [
-                { name: "Home", isActive: true },
-                { name: "Brand", isActive: false },
-                { name: "About Us", isActive: false },
-                { name: "Contact Us", isActive: false },
-            ]
-        }
-        this.active = this.active.bind(this);
-    }
-
-    active = (i) => {
-
-        this.state.navItems = this.state.navItems.map((item, idx) => {
-
-
-            if (i === idx) {
-
-                return (
-                    { ...item, isActive: true }
-
-                );
-            }
-            return ({ ...item, isActive: false });
-        });
-
-        this.setState({ navItems: this.state.navItems });
-
-    }
-    render() {
+export default function Nav() {
+  
+    const navItems = [
+        { name: "Home", route:'/', exact: true },
+        { name: "products", route: '/products'},
+        { name: "About Us", route: '/aboutus'},
+    ]
+  
         return (
             <>
-
                 {/* Navbar for desktop */}
                 <div className="Nav" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  top: 200"
                     style={{ background: "white" }}
                 >
                     <nav className="uk-navbar-container Nav ">
                         <div className="uk-container uk-container-expand uk-navbar-right uk-visible@m">
-
                             <div className="uk-navbar-left">
                                 <ul className="uk-navbar-nav">
-                                    <a className="uk-active uk-logo" href="/app"><img src={logo} width="100px"></img></a>
+                                    <a className="uk-active uk-logo" href="/app"><img src={Images.logo} alt="Aadhya Foods" width="100px"/></a>
                                 </ul>
                             </div>
-
-                            <div data-uk-navbar className="uk-navbar-right">
-                                <ul className="uk-navbar-nav"
-                                    style={{ fontWeight: "bold" }}>
-                                    {this.state.navItems.map((item, idx) => {
-                                        return (
-                                            <li key={idx} >
-                                                <a href="#" className={item.isActive ? "active" : ""} onClick={() => {
-                                                    this.active(idx);
-                                                }}
-                                                >
-                                                    {item.name}
-                                                </a>
-                                            </li>
-                                        );
-                                    })}
-                                </ul>
-
-                            </div>
+                                                
+                                <div data-uk-navbar className="uk-navbar-right">
+                                    <ul className="uk-navbar-nav"
+                                        style={{ fontWeight: "bold" }}>
+                                        {navItems.map((item, idx) => {
+                                            return (
+                                                <li key={idx}>
+                                                    <NavLink to={item.route} activeClassName="selected">
+                                                        {item.name}
+                                                    </NavLink>                                              
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </div>
+                        
 
                         </div>
 
@@ -89,21 +59,20 @@ export default class Nav extends Component {
 
                         <ul className=" uk-nav-center uk-margin-auto-vertical uk-list uk-link-reset"
                             style={{ fontWeight: "bold" }}>
-                            {this.state.navItems.map((item, idx) => {
-                                return (
-                                    <li key={idx} >
-                                        <a href="#" style={{ color: "white", textDecoration: "none !important" }}>
-                                            {item.name}
-                                        </a>
-                                    </li>
-                                );
-                            })}
+                            {navItems.map((item, idx) => {
+                                    return (
+                                        <li key={idx} >
+                                            <NavLink to={item.route} activeClassName="active">
+                                                {item.name}
+                                            </NavLink>                                              
+                                        </li>
+                                    );
+                                })}
                         </ul>
                     </div>
-
                 </div>
             </>
 
         );
-    }
+    
 }
