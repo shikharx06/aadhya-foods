@@ -1,0 +1,19 @@
+.first-section{
+    background-image: url("../../assets/images/Background.png"); 
+    background-color: #1d6a6e; 
+    /* height: 1024px;  */
+   
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.header-text{
+    color: white;
+    font-size: xx-large;
+}
+
+.header-para-text{
+    color: white;
+    font-size: large;
+}
