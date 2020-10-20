@@ -1,7 +1,8 @@
+/* ************************************** FIRST SECTION ********************************************** */
 .first-section{
     background-image: url("../../assets/images/Background.png"); 
     background-color: #1d6a6e; 
-    /* height: 1024px;  */
+    height: 650px; 
    
     background-position: center; 
     background-repeat: no-repeat;
@@ -10,10 +11,113 @@
 
 .header-text{
     color: white;
+    font-weight: 900;
     font-size: xx-large;
 }
+.uk-button{
+    font-weight: bolder;
+    width: fit-content;
+}
 
+.first-button{
+    color: #1d6a6e;
+    border-radius: 10px;
+}
 .header-para-text{
     color: white;
     font-size: large;
+}
+
+/* **************************************************************************************************** */
+
+/* ***************************************** SECOND SECTION ******************************************* */
+
+.second-section{
+    background: #fff4e3;  
+    /* #f7ebd7 */
+}
+
+.second-section-header-text{
+    color: #1d6a6e;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.second-section-para-text{
+    font-weight: bold;
+}
+
+.second-button{
+    background: transparent;
+    border:  2px solid red;
+    border-radius: 10px;
+    color: red;
+}
+/* **************************************************************************************************** */
+
+/* ***************************************** THIRD SECTION ******************************************* */
+
+.third-section{
+    background-image: url("../../assets/images/Background.png"); 
+    width: 100%;
+    background-position: top 40px !important; 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.uk-card{
+    z-index: 0 !important;  
+    max-width: 300px;  
+}
+
+.uk-card-title{
+    font-size: large;
+    font-weight: 900;
+    color: white !important;
+}
+
+.card-body{
+    color:white !important;
+    margin: 0 !important;
+}
+
+.border {
+    padding: 20px;
+    border: 1px dashed #fff;
+    position: relative;
+    margin: 0px;
+  }
+  
+  .border:before {
+    position: absolute;
+    background: black;
+    content: '';
+    z-index: -1;
+  }
+/* **************************************************************************************************** */
+
+/* ***************************************** FOURTH SECTION ******************************************* */
+.fourth-header-text{
+    color: #1d6a6e;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.fourth-section-para-text{
+    font-weight: bold;
+}
+
+/* **************************************************************************************************** */
+
+.fixedRight{
+    position: fixed;
+    right: -30px;
+    bottom: 0;
+}
+
+.fixedLeft{
+    position: fixed;
+    left: -30px;
+    bottom: 0;
+    transform: rotateY(-180deg);
 }

@@ -4,22 +4,22 @@ import './navbar.css'
 import { NavLink } from "react-router-dom";
 
 
-export default function Nav() {
+export default function PseudoNav() {
 
     const navItems = [
-        { name: "Home", route: '/', exact: true },
-        { name: "products", route: '/products' },
-        { name: "About Us", route: '/aboutus' },
+        { name: "", route: '/', exact: true },
+        { name: "", route: '/products' },
+        { name: "", route: '/aboutus' },
     ]
 
     return (
         <>
             {/* Navbar for desktop */}
-            <div className="uk-width-expand NavItemHover " data-uk-sticky=" sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive:  uk-dark; top: 10">
+            <div className="uk-width-expand">
                 <nav className="uk-navbar-container">
                     <div className="uk-container uk-container-1-1 uk-navbar-right ">
                         <div className="uk-navbar-left">
-                            <ul className="uk-navbar-nav uk-margin-left">
+                            <ul className="uk-navbar-nav">
                                 <NavLink to="/" className="uk-active uk-logo" ><img src={Images.logo} alt="Aadhya Foods" width="80px" /></NavLink>
                             </ul>
                         </div>
