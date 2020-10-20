@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 
-  var [isLoading, setLoading] = useState(true);
+  var [isLoading, setLoading] = useState(false);
 
 
   useEffect(() => {
