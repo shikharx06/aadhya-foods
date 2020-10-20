@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 
-  var [isLoading, setLoading] = useState(false);
+  var [isLoading, setLoading] = useState(true);
 
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function App() {
 
 
   return (
-    !isLoading ?
+    isLoading ?
       <div className="uk-position-center">
         <Loader />
       </div>
