@@ -20,7 +20,7 @@ export default function Nav() {
                     <div className="uk-container uk-container-1-1 uk-navbar-right ">
                         <div className="uk-navbar-left">
                             <ul className="uk-navbar-nav uk-margin-left">
-                                <NavLink to="/" className="uk-active uk-logo" ><img src={Images.logo} alt="Aadhya Foods" width="80px" /></NavLink>
+                                <NavLink to="/" className="uk-active uk-logo" ><img src={Images.logo} alt="Aadhya Foods" width="90px" /></NavLink>
                             </ul>
                         </div>
 

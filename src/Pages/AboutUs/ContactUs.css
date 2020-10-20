@@ -1,0 +1,16 @@
+.contact-header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #1d6a6e;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+}

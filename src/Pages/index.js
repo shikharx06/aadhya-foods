@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar/navbar';
 import PseudoNavbar from '../components/Navbar/pseudoNavbar';
+import AboutUs from './AboutUs/ContactUs';
+import Product from './Product/product';
 import Footer from './Footer/footer'
 
 import Home from './HomePage/home';
@@ -21,10 +23,10 @@ export default class Main extends Component {
                             <Home />
                         </Route>
                         <Route path="/aboutus">
-                            <Home />
+                            <AboutUs />
                         </Route>
                         <Route path="/products">
-                            <Home />
+                            <Product />
                         </Route>
                     </Switch>
                 </div>

@@ -3,10 +3,13 @@ import productImage from '../assets/images/bag.svg';
 // import yogaTrainerImage from '../assets/images/yogaTrainer.svg';
 // import sideVectorImage from '../assets/images/sideVector.svg';
 // import wheatBackgroundImage from '../assets/images/wheatBackground.svg';
-// import wheatBackground2Image from '../assets/images/wheatBackground2.svg';
+import Aunty from '../assets/images/Aunty.png';
 import Mahila from '../assets/images/mahila.svg';
-import LogoImage from '../assets/images/logo.svg';
+import LogoImage from '../assets/images/aadhyaLogo.svg';
 import Crop from '../assets/images/crop.png';
+import productFront from '../assets/images/productFront.svg'
+import productBack from '../assets/images/productBack.svg'
+
 export default {
     productBag: productImage,
     // yogaTrainer : yogaTrainerImage,
@@ -15,6 +18,9 @@ export default {
     // wheatBackground : wheatBackgroundImage,
     // wheatBackground2 : wheatBackground2Image,
     // crop : cropImage,
+    productFront: productFront,
+    productBack: productBack,
+    aunty: Aunty,
     mahila: Mahila,
     logo: LogoImage,
     crop: Crop
