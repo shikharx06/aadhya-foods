@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar/navbar';
 import PseudoNavbar from '../components/Navbar/pseudoNavbar';
-import AboutUs from './AboutUs/ContactUs';
+import AboutUs from './ContactUs/ContactUs';
 import Product from './Product/product';
 import Footer from './Footer/footer'
 
