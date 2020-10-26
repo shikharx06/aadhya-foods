@@ -10,6 +10,10 @@ import Crop from "../assets/images/crop.png";
 import productFront from "../assets/images/productFront.svg";
 import productBack from "../assets/images/productBack.svg";
 import cardBackground from "../assets/images/card-background.jpg";
+import aadhyaBanner from "../assets/images/aadhyaBanner.png";
+import blackWheatBowl from "../assets/images/blackwheatbowl.jpg";
+import vector from "../assets/images/vector.png";
+import slice from "../assets/images/slice.svg";
 
 export default {
   productBag: productImage,
@@ -26,4 +30,8 @@ export default {
   logo: LogoImage,
   crop: Crop,
   cardBackground: cardBackground,
+  aadhyaBanner: aadhyaBanner,
+  blackWheatBowl: blackWheatBowl,
+  vector: vector,
+  slice: slice,
 };

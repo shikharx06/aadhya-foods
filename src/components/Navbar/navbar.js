@@ -8,6 +8,7 @@ export default function Nav() {
     { name: "Home", route: "/", exact: true },
     { name: "products", route: "/products" },
     { name: "About Us", route: "/aboutus" },
+    { name: "Contact Us", route: "/contactus" },
   ];
 
   return (
@@ -22,7 +23,12 @@ export default function Nav() {
             <div className="uk-navbar-left">
               <ul className="uk-navbar-nav uk-margin-left">
                 <NavLink to="/" className="uk-active uk-logo">
-                  <img src={Images.logo} alt="Aadhya Foods" width="90px" />
+                  <img
+                    src={Images.logo}
+                    alt="Aadhya Foods"
+                    width="90px"
+                    style={{ marginBottom: "10px" }}
+                  />
                 </NavLink>
               </ul>
             </div>

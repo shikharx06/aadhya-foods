@@ -5,32 +5,34 @@ export default function FourthSection() {
   return (
     <div className=" uk-flex uk-flex-center">
       <div
-        className="uk-grid-collapse uk-flex uk-flex-center"
+        className="uk-grid-collapse uk-flex uk-flex-center uk-flex-middle"
         data-uk-grid
-        data-uk-scrollspy="cls: uk-animation-slide-bottom; target: .animate; delay: 200; repeat: true"
+        data-uk-scrollspy="cls: uk-animation-slide-bottom; target: .animate; delay: 200; "
       >
         <div
-          className="uk-margin-right uk-margin-large-top uk-margin-large-bottom"
-          data-uk-scrollspy="cls: uk-animation-fade; target: #fadeAnimate; delay: 200; repeat: true"
+          className="margin-right uk-margin-large-top uk-margin-large-bottom uk-flex uk-flex-middle"
+          data-uk-scrollspy="cls: uk-animation-fade; target: #fadeAnimate; delay: 200;"
         >
           <iframe
-            id="fadeAnimate"
-            title="black wheat video"
-            height="300px"
-            src="https://www.youtube.com/embed/Av3vX50jTqA"
+            id="youtube-video"
+            title="youtube video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1N8Bv1l_Kvs"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
           ></iframe>
         </div>
         <div
-          className="uk-flex uk-flex-column uk-text-left uk-width-1-2 uk-margin-large-right uk-margin-large-top uk-margin-large-bottom animate"
+          className="uk-flex uk-flex-column uk-text-left uk-width-1-2 uk-margin-large-right uk-margin-large-top uk-margin-large-bottom animate no-margin"
           style={{ maxWidth: "500px" }}
         >
           <h3 className="fourth-header-text">Go Green Initiative</h3>
           <p className="fourth-para-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Pursue knowledge and practices that can lead to more environmentally
+            friendly and ecologically responsible decisions and lifestyles,
+            which can help protect the environment and sustain its natural
+            resources for current and future generations
           </p>
         </div>
       </div>

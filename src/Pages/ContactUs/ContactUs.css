@@ -1,16 +1,35 @@
-.contact-header{
-    font-size: 28px;
-    font-weight: 600;
-    color: #1d6a6e;
+.margin-phone {
+  margin: 80px 60px;
 }
 
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:500px;
-    width:600px;
+.contact-header {
+  color: #1d6a6e;
+  font-weight: 600;
 }
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
+.contact-underline {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 30;
+  padding-bottom: 15px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #ff1745b9, #ff1745b9);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 15% 3px;
+  transition: background-size 0.5s ease;
+}
+
+.contact-underline:hover {
+  background-size: 25% 3px;
+}
+
+@media only screen and (max-width: 640px) {
+  #mapframe {
+    width: 800%;
+    margin-left: 150px;
+  }
+
+  .margin-phone {
+    margin: 22px 22px;
+  }
 }

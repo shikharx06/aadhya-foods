@@ -1,0 +1,44 @@
+.right-vector {
+  position: absolute;
+  top: 400px;
+  right: -200px;
+  width: 300px;
+  height: 0;
+}
+
+.left-vector {
+  position: absolute;
+  top: 300px;
+  transform: rotateZ(270deg);
+  left: -350px;
+  width: 300px;
+  height: 0;
+}
+
+.contact-header > li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .right-vector {
+    display: none;
+  }
+
+  .left-vector {
+    position: absolute;
+    top: 300px;
+    transform: rotateZ(270deg);
+    left: -180px;
+    width: 150px;
+    height: 0;
+  }
+
+  .contact-header > h3 {
+    font-size: medium !important;
+    font-weight: 400;
+  }
+
+  .contact-header > ul {
+    list-style: inside;
+  }
+}

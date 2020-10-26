@@ -11,9 +11,22 @@ export default function Footer() {
       >
         <div className="footer-item">
           <h3>ABOUT US</h3>
-          <li>Home</li>
-          <li>Product</li>
-          <li>Privacy Policy</li>
+          <Link
+            to="/"
+            style={{ color: "white", textDecoration: "none" }}
+            alt="home"
+          >
+            Home
+          </Link>
+          <Link
+            to="/products"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Product
+          </Link>
+          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+            Privacy Policy
+          </Link>
         </div>
         <div className="footer-item">
           <h3>CAREERS</h3>
@@ -22,7 +35,12 @@ export default function Footer() {
               Why Aadhya
             </Link>
           </li>
-          <li>Contact Us</li>
+          <Link
+            to="/contactus"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Contact Us
+          </Link>
         </div>
 
         <div className="footer-item">
