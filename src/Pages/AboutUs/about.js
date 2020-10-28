@@ -9,7 +9,7 @@ export default function AboutUs() {
         style={{ background: "#FFF4E3" }}
       >
         <div className="right-vector">
-          <img src={Images.vector} alt="crafty desgins"></img>
+          <img src={Images.vectorRight} alt="crafty desgins"></img>
         </div>
         <div className="left-vector">
           <img src={Images.vector} alt="crafty desgins"></img>

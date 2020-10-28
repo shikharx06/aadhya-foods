@@ -15,9 +15,11 @@ function App() {
     const erase = setTimeout(() => {
       document.getElementById("loader").classList.remove("active");
     }, 2000);
+
     const end = setTimeout(() => {
       setLoading(false);
     }, 4000);
+
     return () => {
       // cleanup
       clearTimeout(start);

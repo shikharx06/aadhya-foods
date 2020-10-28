@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
+import Images from "../../theme/images";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         class="uk-grid-divider uk-child-width-expand@s uk-margin-large-top uk-margin-large-bottom "
         data-uk-grid
       >
-        <div className="footer-item">
+        <div className="footer-item uk-flex uk-flex-column">
           <h3>ABOUT US</h3>
           <Link
             to="/"
@@ -45,25 +46,15 @@ export default function Footer() {
 
         <div className="footer-item">
           <h3>FOLLOW US</h3>
-          <div>
-            <a
-              className="uk-margin-small-right insta"
-              alt="facebook"
-              href="#"
-              data-uk-icon="icon: facebook"
-            ></a>
-            <a
-              className="uk-margin-small-right facebook"
-              alt="instagram"
-              href="#"
-              data-uk-icon="icon: instagram"
-            ></a>
-            <a
-              className="uk-margin-small-right twitter"
-              alt="twitter"
-              href="#"
-              data-uk-icon="icon: twitter"
-            ></a>
+          <div className="footer-icon">
+            <a href="https://www.facebook.com/Aadya-Food-Products-115844276943172">
+              <img src={Images.facebook} alt="facebook" width="40px"></img>
+            </a>
+          </div>
+          <div className="">
+            <a href="https://www.instagram.com/invites/contact/?i=1b7epac3j6kow&utm_content=juhl1z8">
+              <img src={Images.instagram} alt="instagram" width="40px"></img>
+            </a>
           </div>
         </div>
       </div>

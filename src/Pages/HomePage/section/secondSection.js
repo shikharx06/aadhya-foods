@@ -15,7 +15,7 @@ export default function SecondSection(props) {
             <p className="header-para-text" style={{ color: "black" }}>
               {props.paragraph}
             </p>
-            <button class="uk-button second-button">Learn More</button>
+            {/* <button class="uk-button second-button">Learn More</button> */}
           </div>
         </div>
         <div
@@ -32,7 +32,7 @@ export default function SecondSection(props) {
       </div>
 
       <div className="home-right-vector">
-        <img src={Images.vector} alt="vector"></img>
+        <img src={Images.vectorRight} alt="vector"></img>
       </div>
       <div className="home-left-vector">
         <img src={Images.vector} alt="vector"></img>

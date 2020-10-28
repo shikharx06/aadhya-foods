@@ -46,13 +46,6 @@ export default function FirstSection(props) {
           />
         </div>
       </div>
-
-      <div className="fixedRight uk-visible@l  ">
-        <img src={Images.crop} alt="" width="150px" />
-      </div>
-      <div className="fixedLeft uk-visible@l  ">
-        <img src={Images.crop} alt="" width="150px" />
-      </div>
     </div>
   );
 }

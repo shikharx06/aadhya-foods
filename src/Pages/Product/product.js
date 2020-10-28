@@ -76,43 +76,43 @@ function SecondProductSection() {
           <div class="uk-position-center-left uk-position-small uk-visible@m">
             <ul class="uk-thumbnav uk-thumbnav-vertical">
               <li uk-slideshow-item="0">
-                <a
-                  href="#"
+                <button
                   style={{
                     background: "white",
                     width: "70px",
                     padding: "7px",
                     marginLeft: "4px",
+                    border: "white",
                   }}
                 >
                   <img src={Images.productFront} width="60px" alt="" />
-                </a>
+                </button>
               </li>
               <li uk-slideshow-item="1">
-                <a
-                  href="#"
+                <button
                   style={{
                     background: "white",
                     width: "70px",
                     padding: "7px",
                     marginLeft: "4px",
+                    border: "white",
                   }}
                 >
                   <img src={Images.productFront} width="60px" alt="" />
-                </a>
+                </button>
               </li>
               <li uk-slideshow-item="2">
-                <a
-                  href="#"
+                <button
                   style={{
                     background: "white",
                     width: "70px",
                     padding: "7px",
                     marginLeft: "4px",
+                    border: "white",
                   }}
                 >
                   <img src={Images.blackWheatBowl} width="60px" alt="" />
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -166,19 +166,4 @@ export default function AboutUs() {
       </div>
     </>
   );
-}
-
-{
-  /* <div className="uk-width-1-2 about-button">
-<span className="about-button-text ">Rich in antioxidants to help <br />you boost your immunity <br />and cure cancer.</span>
-</div>
-<div className="uk-width-1-2 about-button">
-<span className="about-button-text">Higher amount of fiber <br /> than normal wheat.</span>
-</div>
-<div className="uk-width-1-2 about-button">
-<span className="about-button-text">Good source of iron <br /> and zinc.</span>
-</div>
-<div className="uk-width-1-2 about-button">
-<span className="about-button-text">Zero sugar.</span>
-</div> */
 }
